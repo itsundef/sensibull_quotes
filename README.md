@@ -1,3 +1,4 @@
+
 # SensibullQuotes
 
 SensibullQuotes is a Python package that provides an interface to fetch and process live derivative prices and quotes from Sensibull's API.
@@ -12,7 +13,7 @@ SensibullQuotes is a Python package that provides an interface to fetch and proc
 ## Installation
 
 You can install SensibullQuotes using pip:
-pip install sensibull-quotes
+pip install sensibull_quotes
 Copy
 ## Usage
 
@@ -57,8 +58,10 @@ if live_data:
             print(f"  Token: {option['token']}, Trading Symbol: {option['tradingsymbol']}, Last Price: {option['last_price']}, OI: {option['oi']}, IV: {option['iv']}")
 else:
     print("Failed to fetch live derivative prices")
-API Reference
-SensibullQuotes
+ 
+```
+# API Reference
+# SensibullQuotes
 The main class that provides access to Sensibull's API.
 Methods:
 
@@ -69,7 +72,6 @@ get_quotes(trading_symbols): Fetches quotes for one or more trading symbols.
 
 trading_symbols: A string (for a single symbol) or a list of strings (for multiple symbols)
 Returns a dictionary where keys are trading symbols and values are quote information
-
 
 
 Quote Information
@@ -88,11 +90,11 @@ expiry: The expiry date (for derivatives)
 oi: Open Interest
 volume: Trading volume
 
-Note that some fields may be None if not applicable or not available for a particular instrument.
-Contributing
-Contributions are welcome! Please feel free to submit a Pull Request.
-License
-This project is licensed under the MIT License.
-Disclaimer
-This package is not officially associated with or endorsed by Sensibull. Use at your own risk.
+# Note that some fields may be None if not applicable or not available for a particular instrument.
+# Contributing
+# Contributions are welcome! Please feel free to submit a Pull Request.
+# License
+# This project is licensed under the MIT License.
+# Disclaimer
+# This package is not officially associated with or endorsed by Sensibull. Use at your own risk.
 
