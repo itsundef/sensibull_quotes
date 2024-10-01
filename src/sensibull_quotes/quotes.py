@@ -14,9 +14,19 @@ class SensibullQuotes:
         self.quotes_url = f'{self.base_url}/cache/quotes_v2'
         self.derivatives_data = None
         self.headers = {
-            'accept': 'application/json',
+            'accept': 'application/json, text/plain, */*',
+            'accept-language': 'en-GB,en-US;q=0.9,en;q=0.8',
             'content-type': 'application/json',
-            'user-agent': 'SensibullQuotes/1.0.0'
+            'origin': 'https://web.sensibull.com',
+            'priority': 'u=1, i',
+            'referer': 'https://web.sensibull.com/',
+            'sec-ch-ua': '"Not/A)Brand";v="8", "Chromium";v="126", "Google Chrome";v="126"',
+            'sec-ch-ua-mobile': '?0',
+            'sec-ch-ua-platform': '"Linux"',
+            'sec-fetch-dest': 'empty',
+            'sec-fetch-mode': 'cors',
+            'sec-fetch-site': 'same-site',
+            'user-agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36',
         }
         self.cookies = {}
 
