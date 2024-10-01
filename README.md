@@ -13,7 +13,7 @@ SensibullQuotes is a Python package that provides an interface to fetch and proc
 ## Installation
 
 You can install SensibullQuotes using pip:
-pip install sensibull_quotes
+pip install sensibull-quotes
 Copy
 ## Usage
 
